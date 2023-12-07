@@ -1,0 +1,11 @@
+public class ConexaoDB {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            String url = "jdbc:sqlserver://regulus;databaseName=med";
+            String username = "BD23523";
+            String password = "BD23523";
+            Connection connection = DriverManager.getConnection(url, username, password);
+
+    public static Connection conectar() throws SQLException {
+        return DriverManager.getConnection(URL, USUARIO, SENHA);
+    }
+}
